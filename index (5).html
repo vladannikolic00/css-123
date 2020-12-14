@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Main Heading</title>
+    
+    <style>
+        a[href^="https:google.com"]{
+            color: green;
+        }
+        a[href^="https://www.link-group.eu"]{
+            color: red;
+        }
+        p[title~="4"]{
+            color: red;
+        }
+        #secend-div p:nth-child(even){
+            color: red;
+        }
+        #secend-div p:nth-child(odd){
+            color: blue;
+        }
+        #frist-div> p::after{
+            content: "dodatni tekst";
+            color: yellow;
+        }
+        body >p:nth-last-child(1):hover{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <h3>Sub Subheading</h3>
+        <div id="secend-div">
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+         </div>
+     </div>
+     <p>Paragraph 9</p>
+     <p>Paragraph 10</p>
+</body>
+</html>
+
